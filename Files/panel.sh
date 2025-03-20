@@ -29,7 +29,7 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "📂 Changing directory to SkyPort..."
-cd panel5 || { echo "❌ Failed to change directory to panel5."; exit 1; }
+cd panel5 || { echo "❌ Failed to change directory to SkyPort."; exit 1; }
 
 echo "📦 Installing Node dependencies..."
 npm install
@@ -38,7 +38,7 @@ echo "🌱 Seeding the database..."
 npm run seed
 
 echo "👤 Creating a new user..."
-npm run createUser Admin Admin@icloud.com Admin
+npm run createUser 
 
 echo "🚀 Starting SkyPort..."
 node .
